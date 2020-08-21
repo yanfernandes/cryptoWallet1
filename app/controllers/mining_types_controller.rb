@@ -28,7 +28,7 @@ class MiningTypesController < ApplicationController
 
     respond_to do |format|
       if @mining_type.save
-        format.html { redirect_to @mining_type, notice: 'Mining type was successfully created.' }
+        format.html { redirect_to @mining_type, notice: t('creating.coin') }
         format.json { render :show, status: :created, location: @mining_type }
       else
         format.html { render :new }
@@ -56,7 +56,7 @@ class MiningTypesController < ApplicationController
   def destroy
     @mining_type.destroy
     respond_to do |format|
-      format.html { redirect_to mining_types_url, notice: 'Mining type was successfully destroyed.' }
+      format.html { redirect_to mining_types_url, notice: t('destroy.coin') }
       format.json { head :no_content }
     end
   end

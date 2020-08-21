@@ -29,7 +29,7 @@ class CoinsController < ApplicationController
 
     respond_to do |format|
       if @coin.save
-        format.html { redirect_to @coin, notice: 'Coin was successfully created.' }
+        format.html { redirect_to @coin, notice: t('creating.coin') }
         format.json { render :show, status: :created, location: @coin }
       else
         format.html { render :new }
@@ -57,7 +57,7 @@ class CoinsController < ApplicationController
   def destroy
     @coin.destroy
     respond_to do |format|
-      format.html { redirect_to coins_url, notice: 'Coin was successfully destroyed.' }
+      format.html { redirect_to coins_url, notice: t('destroy.coin') }
       format.json { head :no_content }
     end
   end

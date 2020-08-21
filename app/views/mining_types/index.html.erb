@@ -18,7 +18,7 @@
         <td><%= mining_type.acronym %></td>
         <td><%= link_to 'Mostrar', mining_type %></td>
         <td><%= link_to 'Editar', edit_mining_type_path(mining_type) %></td>
-        <td><%= link_to 'Apagar', mining_type, method: :delete, data: { confirm: t('msg.confirm') } %></td>
+        <td><%= link_to 'Apagar', mining_type, method: :delete, data: { confirm: "Tem certeza?" } %></td>
       </tr>
     <% end %>
   </tbody>

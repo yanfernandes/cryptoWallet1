@@ -21,3 +21,14 @@ pt-BR:
   showing:
     coin: "Mostrando Moeda"
     mining_type: "Mostrando Tipo de Mineração"
+  destroy:
+    coin: "Moeda apagada com sucesso"
+    mining_type: "Tipo de Mineração apagado com sucesso"
+  creating:
+    coin: "Moeda criada com sucesso"
+    mining_type: "Tipo de Mineração criado com sucesso"
+  confirm:
+    coin: "Moeda apagada com sucesso"
+    mining_type: "Tipo de Mineração apagado com sucesso"
+
+
