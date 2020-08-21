@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Moedas</h1>
+<h1><%= Coin.model_name.human(count: @coins.count) %></h1>
 
 <table class="table table-hover">
   <thead>
@@ -21,7 +21,7 @@
         <td><%= image_tag coin.url_image, widht:25, height:25 %> </td>
         <td><%= link_to 'Mostrar', coin %></td>
         <td><%= link_to 'Editar', edit_coin_path(coin) %></td>
-        <td><%= link_to 'Apagar', coin, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+        <td><%= link_to 'Apagar', coin, method: :delete, data: { confirm: t('msg.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -29,4 +29,4 @@
 
 <br>
 
-<%= link_to 'Nova moeda', new_coin_path %>
+<%= link_to t('new.coin'), new_coin_path, class:"btn btn-primary" %>
