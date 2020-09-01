@@ -8,6 +8,9 @@ Stacks:
 Ruby on Rails
 Javascript
 
+Deply:
+Heroku
+
 Crypto Wallet is an application for storing coins and mining types.
 
-Demo: https://salty-brook-56391.herokuapp.com/
+Demo: https://cryptowallet1.herokuapp.com/
